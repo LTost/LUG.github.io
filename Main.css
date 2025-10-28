@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    color: #222;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+header {
+    text-align: center;
+    padding: 32px 16px 8px;
+    background: linear-gradient(180deg, #fff 0%, #fff0 100%);
+}
+
+.container {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 0 16px 48px;
+    box-sizing: border-box;
+}
+
+
+.card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 18px;
+    margin: 18px 0;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.06);
+}
+
+
+.white-box {
+    background: #ffffff;
+    color: #111;
+}
+
+/* snake themed box: red gradient and white text */
+.snake-box {
+    background: linear-gradient(135deg,#ff6b6b 0%, #b30000 100%);
+    color: #fff;
+    border: 1px solid rgba(179,0,0,0.9);
+}
+
+/* Leger uten grenser themed (red accent, clean layout) */
+.lug-box {
+    background: linear-gradient(180deg,#fff 0%, #fff 60%);
+    border-left: 8px solid #b30000; /* accent like MSF color */
+    color: #111;
+}
+
+/* images inside cards */
+.media {
+    display: block;
+    width: 100%;
+    max-height: 360px;
+    object-fit: cover;
+    margin-top: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.06);
+}
+
+/* text sizes */
+h1 { margin: 0 0 6px; font-size: 1.6rem; }
+.lead { margin: 0 0 12px; color: #555; }
+h2 { margin: 0 0 8px; font-size: 1.1rem; }
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 18px 10px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* responsive tweaks */
+@media (min-width: 700px) {
+    .media { max-height: 420px; }
+    .card { padding: 24px; border-radius: 16px; }
+}
+
+.text-box {
+    position: fixed;             /* keep box visible while scrolling */
+    bottom: 40px;                /* distance from bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;                /* slightly wider */
+    max-width: 90vw;             /* responsive on small screens */
+    padding: 20px;
+    border: 2px solid #b30000;
+    text-align: left;
+    border-radius: 20px;         /* rounded corners */
+    background-color: #ff4d4d;   /* red background */
+    color: #ffffff;              /* white text for contrast */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    z-index: 999;                /* ensure it sits above other content */
+    box-sizing: border-box;
+}
+
+.qr-section {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 12px 0 30px;
+}
+
+.qr-section a {
+    color: #b30000;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.qr-section img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.08);
+}
+
+/* mindre QR på små skjermer */
+@media (max-width: 420px) {
+    .qr-section img { width: 100px; height: 100px; }
+}
+
