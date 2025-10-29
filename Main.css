@@ -7,7 +7,7 @@ body {
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
 }
-
+/* LTost / LudvigTS */
 header {
     text-align: center;
     padding: 32px 16px 8px;
@@ -17,14 +17,17 @@ header {
 .container {
     max-width: 900px;
     margin: 24px auto;
+    /* LTost / LudvigTS */
     padding: 0 16px 48px;
     box-sizing: border-box;
 }
 
 
+
 .card {
     background: #ffffff;
     border-radius: 14px;
+    /* LTost / LudvigTS */
     padding: 18px;
     margin: 18px 0;
     box-shadow: 0 6px 20px rgba(0,0,0,0.08);
@@ -34,6 +37,7 @@ header {
 
 .white-box {
     background: #ffffff;
+    /* LTost / LudvigTS */
     color: #111;
 }
 
@@ -43,15 +47,17 @@ header {
     border: 1px solid rgba(179,0,0,0.9);
 }
 
+/* LTost / LudvigTS */
 .lug-box {
     background: linear-gradient(180deg,#fff 0%, #fff 60%);
-    border-left: 8px solid #b30000; /* accent like MSF color */
+    border-left: 8px solid #b30000; 
     color: #111;
 }
 
 .media {
     display: block;
     width: 100%;
+    /* LTost / LudvigTS */
     max-height: 360px;
     object-fit: cover;
     margin-top: 12px;
@@ -61,6 +67,7 @@ header {
 
 h1 { margin: 0 0 6px; font-size: 1.6rem; }
 .lead { margin: 0 0 12px; color: #555; }
+/* LTost / LudvigTS */
 h2 { margin: 0 0 8px; font-size: 1.1rem; }
 
 footer {
@@ -70,6 +77,7 @@ footer {
     font-size: 0.9rem;
 }
 
+/* LTost / LudvigTS */
 @media (min-width: 700px) {
     .media { max-height: 420px; }
     .card { padding: 24px; border-radius: 16px; }
@@ -79,6 +87,7 @@ footer {
     position: fixed;            
     bottom: 40px;               
     left: 50%;
+    /* LTost / LudvigTS */
     transform: translateX(-50%);
     width: 300px;               
     max-width: 90vw;            
@@ -87,7 +96,8 @@ footer {
     text-align: left;
     border-radius: 20px;        
     background-color: #ff4d4d;  
-    color: #ffffff;              
+    color: #ffffff;      
+    /* LTost / LudvigTS */        
     box-shadow: 0 6px 18px rgba(0,0,0,0.25);
     z-index: 999;               
     box-sizing: border-box;
@@ -97,6 +107,7 @@ footer {
     margin-top: 12px;
     display: flex;
     align-items: center;
+    /* LTost / LudvigTS */
     justify-content: center;
     gap: 12px;
     flex-wrap: wrap;
@@ -106,6 +117,7 @@ footer {
 .qr-section a {
     color: #b30000;
     font-weight: 600;
+    /* LTost / LudvigTS */
     text-decoration: none;
 }
 
@@ -115,6 +127,7 @@ footer {
     object-fit: cover;
     border-radius: 8px;
     border: 1px solid rgba(0,0,0,0.08);
+    /* LTost / LudvigTS */
 }
 
 @media (max-width: 420px) {
@@ -124,6 +137,7 @@ footer {
 
 #ltost-badge {
     position: fixed;
+    /* LTost / LudvigTS */
     bottom: 12px;
     left: 12px;
     background: rgba(0,0,0,0.45); 
@@ -133,6 +147,7 @@ footer {
     font-weight: 600;
     font-size: 0.9rem;
     font-family: inherit;
+    /* LTost / LudvigTS */
     z-index: 99999;
     opacity: 40%;
     box-shadow: 0 4px 14px rgba(0,0,0,0.25);
@@ -142,6 +157,7 @@ footer {
 }
 
 @media (max-width: 420px) {
+    /* LTost / LudvigTS */
     #ltost-badge { bottom: 8px; right: 8px; font-size: 0.85rem; padding: 6px 10px; }
 }
 
